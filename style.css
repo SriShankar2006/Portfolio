@@ -1,0 +1,324 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:90px;
+}
+
+body{
+background:#0f172a;
+color:white;
+cursor:none;
+overflow-x:hidden;
+}
+
+/* PARTICLES BACKGROUND */
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+}
+
+/* CUSTOM CURSOR */
+
+.cursor{
+width:18px;
+height:18px;
+border-radius:50%;
+background:#38bdf8;
+position:fixed;
+transform:translate(-50%,-50%);
+pointer-events:none;
+box-shadow:0 0 20px #38bdf8,0 0 40px #38bdf8;
+z-index:1000;
+transition:transform 0.15s ease;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:rgba(0,0,0,0.45);
+backdrop-filter:blur(12px);
+padding:15px 0;
+z-index:999;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:80%;
+margin:auto;
+}
+
+.logo{
+color:#38bdf8;
+font-weight:600;
+}
+
+/* NAVIGATION */
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+/* NAV LINKS */
+
+nav ul li a{
+color:white;
+text-decoration:none;
+padding:8px 14px;
+border-radius:8px;
+position:relative;
+transition:0.3s;
+}
+
+/* HOVER BACKGROUND EFFECT */
+
+nav ul li a::before{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:0%;
+height:100%;
+background:rgba(56,189,248,0.25);
+border-radius:8px;
+z-index:-1;
+transition:0.35s;
+}
+
+nav ul li a:hover::before{
+width:100%;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.typing{
+color:#38bdf8;
+white-space:nowrap;
+margin-top:10px;
+}
+
+.btn{
+margin-top:25px;
+padding:10px 22px;
+background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+color:white;
+text-decoration:none;
+border-radius:8px;
+transition:all 0.3s ease;
+box-shadow:0 0 10px rgba(56,189,248,0.4);
+}
+
+.btn:hover{
+transform:translateY(-4px) scale(1.05);
+box-shadow:0 0 25px rgba(56,189,248,0.8);
+}
+
+/* SECTIONS */
+
+section{
+padding:100px 10%;
+text-align:center;
+scroll-margin-top:100px;
+}
+
+/* ABOUT */
+
+#about p{
+max-width:750px;
+margin:auto;
+line-height:1.7;
+margin-top:20px;
+color:#d1d5db;
+}
+
+/* SKILLS */
+
+.skill{
+max-width:500px;
+margin:20px auto;
+text-align:left;
+}
+
+.skill p{
+margin-bottom:5px;
+}
+
+.skill-bar{
+background:#1e293b;
+height:12px;
+border-radius:10px;
+overflow:hidden;
+}
+
+.skill-level{
+height:100%;
+background:#38bdf8;
+width:0;
+animation:load 2s forwards;
+}
+
+.html{width:95%;}
+.css{width:90%;}
+.js{width:85%;}
+.node{width:80%;}
+.cloud{width:75%;}
+.python{width:80%;}
+.react{width:50%;}
+
+@keyframes load{
+from{width:0;}
+}
+
+/* PROJECTS */
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.project-card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.2);
+padding:30px;
+border-radius:15px;
+transition:0.4s;
+}
+
+.project-card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 15px 40px rgba(56,189,248,0.5);
+border:1px solid rgba(56,189,248,0.6);
+}
+
+/* CONTACT */
+
+form{
+max-width:420px;
+margin:auto;
+display:flex;
+flex-direction:column;
+margin-top:20px;
+}
+
+form input,
+textarea{
+margin:10px 0;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#1e293b;
+color:white;
+}
+
+form input::placeholder,
+textarea::placeholder{
+color:#94a3b8;
+}
+
+form button{
+background:#38bdf8;
+border:none;
+padding:12px;
+color:white;
+cursor:pointer;
+border-radius:6px;
+transition:0.3s;
+}
+
+form button:hover{
+background:#0ea5e9;
+box-shadow:0 0 12px #38bdf8;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:50px;
+color:#94a3b8;
+}
+
+footer a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+footer a:hover{
+text-decoration:underline;
+}
+
+.socials a{
+color:#38bdf8;
+font-size:22px;
+margin:0 10px;
+transition:0.3s;
+}
+
+.socials a:hover{
+color:white;
+transform:scale(1.2);
+}
+
+section h2{
+font-size:32px;
+margin-bottom:10px;
+position:relative;
+display:inline-block;
+}
+
+section h2::after{
+content:"";
+width:0;
+height:3px;
+background:#38bdf8;
+position:absolute;
+left:0;
+bottom:-6px;
+transition:0.4s;
+}
+
+section:hover h2::after{
+width:100%;
+}
