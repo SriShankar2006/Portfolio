@@ -62,6 +62,3 @@ Portfolio-Website
 📬 Contact
 
 ---
----
-
-If you want, I can also show you **3 GitHub tricks that make your portfolio repo look like a senior developer project** (with badges, images, and preview banner).
