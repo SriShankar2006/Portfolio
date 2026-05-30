@@ -2,7 +2,7 @@
 
 A lightweight, responsive personal portfolio site built with plain HTML, CSS, and JavaScript to showcase projects, skills, and contact information.
 
-**Live preview:** This site is published at https://srishankar2006.github.io/Portfolio-main/
+**Live preview:** This site is published at https://srishankar2006.github.io/Portfolio/
 
 ---
 
@@ -39,11 +39,3 @@ python -m http.server 8000
 - Phone: +91 9003301456
 - GitHub: https://github.com/SriShankar2006
 - LinkedIn: https://www.linkedin.com/in/sri-shankar-43966931b
-
----
-
-If you'd like, I can also:
-- Remove the Python mention from the UI and `README.md` (if you prefer accuracy), or
-- Add a short Projects/Usage section per project with direct links and brief descriptions.
-
-Please review [README.md](README.md) and tell me if you want any edits.
